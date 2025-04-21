@@ -1,0 +1,59 @@
+**Penjelasan index.html (Point-Point)**
+1. Menggunakan HTML5 standar dengan bahasa Indonesia (lang="id").
+   
+3. Mengatur karakter UTF-8 supaya semua teks tampil normal.
+   
+5. Menggunakan <meta viewport> agar tampilan responsif di semua perangkat.
+   
+7. Menghubungkan file CSS eksternal (style.css) untuk styling halaman.
+   
+9. Di dalam <body>:
+   - Header berisi judul besar (Halo, Saya Kristo!) yang berada di tengah.
+   - Section utama menggunakan Grid:
+     a) Kolom kiri berisi foto profil.
+     b) Kolom kanan berisi:
+        1) Biografi (Nama, Profesi, Hobi, Domisili).
+        2) Portofolio (daftar proyek dan tanggal).
+           
+10. Footer berisi teks hak cipta sederhana di bagian bawah.
+
+**Penjelasan style.css (Point-Point)**
+1. Melakukan reset margin, padding, dan box-sizing di seluruh elemen.
+
+2. Mengatur body:
+   - Gunakan font modern (Segoe UI, dsb).
+   - Latar belakang warna abu-abu muda (#f4f4f4).
+   - Warna teks abu tua.
+
+3. Header:
+   - Tulisan ditengah.
+   - Ada jarak ke bawah (margin-bottom).
+
+4. Grid Container:
+   - Membuat layout 2 kolom:
+     a) Kolom foto (1 bagian).
+     b) Kolom konten (2 bagian).
+   - Jarak antar kolom (gap).
+
+5. Foto Profil:
+   - Ukuran penuh dalam kolom.
+   - Sudut membulat (border-radius).
+
+6. Bagian kanan (Biografi & Portofolio):
+   - Menggunakan flex column (disusun ke bawah).
+   - Kotak putih dengan padding besar, sudut membulat, dan bayangan (shadow).
+
+7. Daftar Biografi dan Portofolio:
+   - Baris dibuat fleksibel: label di kiri, detail di kanan.
+   - Setiap baris diberi garis bawah halus.
+
+8. Portofolio:
+   - Nama proyek ditebalkan.
+   - Tanggal dibuat warna lebih abu dan ukuran font sedikit lebih kecil.
+
+9. Footer:
+   - Teks kecil, warna abu-abu terang, rata tengah.
+
+10. Responsif untuk Mobile:
+   - Layout berubah jadi 1 kolom.
+   - Daftar bio dan portofolio jadi tumpuk vertikal untuk rapi di HP.
