@@ -1,0 +1,127 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body dasar */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .site-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Layout 2 kolom utama */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1 bagian untuk foto, 2 bagian untuk konten */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: start;
+  }
+  
+  /* Styling foto profil */
+  .profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Bagian kanan: Biografi dan Portofolio */
+  .profile-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Box Biografi dan Portofolio */
+  .bio, .portfolio {
+    background: #ffffff;
+    padding: 30px; /* Membesarkan padding */
+    border-radius: 15px; /* Membesarkan sudut */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Membuat bayangan lebih nyata */
+    margin-bottom: 30px;
+  }
+  
+  /* Styling daftar Biografi */
+  .bio-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bio-list li {
+    display: flex;
+    justify-content: space-between; /* Label di kiri, detail di kanan */
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Label di Biografi */
+  .bio-title {
+    font-weight: bold;
+    font-size: 1em; /* Font lebih kecil */
+  }
+  
+  /* Detail di Biografi */
+  .bio-detail {
+    color: #555;
+    font-size: 0.9em; /* Font lebih kecil */
+  }
+  
+  /* Styling daftar Portofolio */
+  .portfolio-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .portfolio-list li {
+    display: flex;
+    justify-content: space-between; /* Nama project di kiri, tanggal di kanan */
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Nama project */
+  .project-name {
+    font-weight: bold;
+    font-size: 1em; /* Font lebih kecil */
+  }
+  
+  /* Tanggal project */
+  .project-date {
+    color: #666;
+    font-size: 0.9em; /* Font lebih kecil */
+  }
+  
+  /* Footer */
+  .site-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Media Query untuk Responsif Mobile */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* Layout berubah ke 1 kolom di layar kecil */
+      text-align: center;
+    }
+  
+    /* Agar daftar bio dan portofolio tetap rapi di mobile */
+    .bio-list li, .portfolio-list li {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
