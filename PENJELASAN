@@ -1,13 +1,13 @@
 **Penjelasan index.html (Point-Point)**
 1. Menggunakan HTML5 standar dengan bahasa Indonesia (lang="id").
    
-3. Mengatur karakter UTF-8 supaya semua teks tampil normal.
+2. Mengatur karakter UTF-8 supaya semua teks tampil normal.
    
-5. Menggunakan <meta viewport> agar tampilan responsif di semua perangkat.
+3. Menggunakan <meta viewport> agar tampilan responsif di semua perangkat.
    
-7. Menghubungkan file CSS eksternal (style.css) untuk styling halaman.
+4. Menghubungkan file CSS eksternal (style.css) untuk styling halaman.
    
-9. Di dalam <body>:
+5. Di dalam <body>:
    - Header berisi judul besar (Halo, Saya Kristo!) yang berada di tengah.
    - Section utama menggunakan Grid:
      a) Kolom kiri berisi foto profil.
@@ -15,7 +15,7 @@
         1) Biografi (Nama, Profesi, Hobi, Domisili).
         2) Portofolio (daftar proyek dan tanggal).
            
-10. Footer berisi teks hak cipta sederhana di bagian bawah.
+6. Footer berisi teks hak cipta sederhana di bagian bawah.
 
 **Penjelasan style.css (Point-Point)**
 1. Melakukan reset margin, padding, dan box-sizing di seluruh elemen.
